@@ -78,6 +78,7 @@ test('Execute SQL Query with Multiple WHERE Clause', async () => {
     expect(result[0]).toEqual({ id: '1', name: 'John' });
 });
 
+
 test('Execute SQL Query with Greater Than', async () => {
     const queryWithGT = 'SELECT id FROM sample WHERE age > 22';
     const result = await executeSELECTQuery(queryWithGT);
